@@ -29,6 +29,11 @@ describe ('Fizzbuzz', function(){
       expect(fizzbuzz.play(15)).toEqual("FizzBuzz");
     });
 
+    it('is not divisible by 3, 5 or 15', function(){
+      fizzbuzz = new Fizzbuzz();
+      expect(fizzbuzz.play(11)).toEqual(11);
+    });
+
   });
 
 });
